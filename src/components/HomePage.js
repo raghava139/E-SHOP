@@ -1,11 +1,8 @@
-import { Button, Card, PageHeader, Space } from 'antd'
+import { Card} from 'antd'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { FetchCategories } from '../redux-store/actions/actioncreators/CategoryActions';
 import { Link } from 'react-router-dom';
-import { Header } from 'antd/es/layout/layout';
-import Title from 'antd/es/skeleton/Title';
-import { ArrowLeftOutlined } from '@ant-design/icons';
 
 const HomePage = () => {
   const dispatch = useDispatch();
