@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+:root {
+  background-color: #f5f5f5;
+}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +38,214 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: #001529; /* Ant Design default header background color */
+}
+
+.menu {
+  flex: 1; /* Allow the menu to take up remaining space */
+  display: flex;
+  justify-content: flex-end; /* Align menu items to the right */
+  line-height: 64px; /* Align menu items vertically in the center */
+}
+
+.logo {
+  background: white;
+  border-radius: 12px;
+  width: 40px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.categories-mainDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top:0em;
+  padding-bottom:1.2em;
+  padding-left:1.2em;
+  padding-right:1.2em;
+  /* background-color: white; */
+}
+
+.categories-title {
+  display: flex;
+  justify-content: center;
+}
+
+.category-name {
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+}
+.single-name {
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.categories-mainDiv-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 5px;
+  padding-left: 31px;
+}
+
+/* .category-image-filter {
+  height: 150px;
+  width: 500px;
+} */
+
+/* :root {
+  background-color: #f5f5f5;
+} */
+
+.item-page-container {
+  padding: 16px;
+  /* background-color: white; */
+}
+
+.item-page-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 24px; /* Space between items */
+}
+
+.item-page-image {
+  flex: 1;
+  margin-right: 16px; /* Space between image and details */
+  box-shadow: 1px 2px rgb(136, 125, 125);
+}
+
+.item-image {
+  width: 100%;
+  height: auto; /* Adjust to maintain aspect ratio */
+}
+
+.item-page-details {
+  flex: 2; /* Adjust as needed to control the size of the details section */
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.item-description {
+  margin-bottom: 16px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.item-price {
+  font-size: 20px;
+  color: #fa541c; /* Example color for price */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .item-page-content {
+    flex-direction: column; /* Stack image and details vertically on smaller screens */
+    align-items: center;
+  }
+
+  .item-page-image {
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-bottom: 16px; /* Add space below image on smaller screens */
+    box-shadow: 1px 3px black;
+  }
+
+  .item-title {
+    font-size: 20px; /* Smaller font size for titles on smaller screens */
+  }
+
+  .item-price {
+    font-size: 18px; /* Smaller font size for price on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .item-title {
+    font-size: 18px; /* Further reduce font size for very small screens */
+  }
+
+  .item-price {
+    font-size: 16px; /* Further reduce font size for very small screens */
+  }
+}
+
+.categories-mainDiv-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px; /* Space between cards */
+}
+
+.category-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.category-price {
+  font-size: 14px;
+  color: #fa541c; /* Example color for price */
+  margin-top: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .categories-mainDiv-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Remove background color when menu item is active */
+.header .ant-menu-item-active {
+  background-color: transparent !important; /* Remove background color */
+}
+
+/* Ensure the icon is always white */
+.header .anticon-shopping-cart {
+  color: white; /* Icon color */
+}
+
+/* Optional: Add hover effects if needed */
+.header .ant-menu-item:hover {
+  background-color: transparent; /* Hover background color */
+}
+
+.ant-layout-header{
+  position: sticky !important;
+  top: 0% !important;
+  z-index: 1 !important;
+}
+
+
+/* Footer at the bottom of the page */
+.ant-layout-footer {
+  /* background: #001529; */
+  color: black;
+  text-align: center;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height:5px;
+
 }
