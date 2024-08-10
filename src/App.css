@@ -65,10 +65,22 @@
   align-items: center;
   font-size: 22px;
 }
+@media (max-width: 768px) { /* Adjust the max-width value as needed */
+  .categories-mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+  }
+}
 
 .categories-mainDiv {
   display: flex;
+  justify-content: centfer;
   flex-wrap: wrap;
+  align-items: center;
   gap: 5px;
   padding-top:0em;
   padding-bottom:1.2em;

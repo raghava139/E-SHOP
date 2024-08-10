@@ -13,7 +13,7 @@ const HomePage = () => {
   }, [dispatch]);
   return (
     <>
-      { GetCategories?.categories?.length>0 ?<h3>Categories</h3>:''}
+      { GetCategories?.categories?.length>0 ?<h3 style={{textAlign:'center'}}>Categories</h3>:''}
       <div className='categories-mainDiv'>
         {
           GetCategories?.categories
