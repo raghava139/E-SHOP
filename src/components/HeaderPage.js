@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import { Affix, Breadcrumb, Layout, Menu, theme } from 'antd';
-import { useSelector } from 'react-redux';
-const { Header, Content, Footer } = Layout;
+import React from 'react';
+import { Breadcrumb, Layout, Menu, theme } from 'antd';
+const { Header, Content} = Layout;
 const items = new Array(3).fill(null).map((_, index) => ({
   key: String(index + 1),
   label: `nav ${index + 1}`,

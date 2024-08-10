@@ -15,7 +15,7 @@ const ItemPage = () => {
 
   useEffect(() => {
     dispatch(FetchBySingleItem(id, price));
-  }, [dispatch, id]);
+  }, [dispatch, id, price]);
 
   const isItemInCart = (itemId) => cartData.some(cartItem => cartItem.idMeal === itemId);
 
